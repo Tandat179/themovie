@@ -1,0 +1,90 @@
+@use "../../scss/" as *;
+
+button {
+  cursor: pointer;
+  font-family: $font-family;
+}
+
+.btn {
+  border: 4px solid transparent;
+  background-color: $main-color;
+  color: $white;
+  border-radius: $border-radius;
+  padding: 0.5rem 1.8rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  box-shadow: 0px 0px 7px 8px #ff00004d;
+  transition: box-shadow 0.3s ease;
+  position: relative;
+
+}
+
+.btn:hover {
+  box-shadow: 0px 0px 7px 15px #ff00004d;
+}
+
+
+////////
+.btn-outline {
+  border: 3px solid $white;
+  background-color: transparent;
+  color: $white;
+  box-shadow: unset;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-outline:hover {
+  box-shadow: unset;
+  color: $main-color;
+  background-color: $white;
+}
+///////
+.btn.small {
+  border-width: 2px;
+  padding: 0.25rem 1.5rem;
+  font-size: 1rem;
+}
+
+.btn.smlogin {
+  border-width: 2px;
+  padding: 0.25rem 1.5rem;
+  font-size: 1.3rem;
+  color: $white;
+  border: 3px solid rgba(255, 60, 60, 0.837);
+  background-color:transparent;
+  box-shadow: 0px 0px 7px 8px #ffffff00;
+  transition: box-shadow 0.3s ease;
+  position: relative;
+  transition: color 0.3s ease, background-color 0.3s ease;
+
+
+}
+
+
+.btn.smlogin:hover{
+  box-shadow: 0px 0px 7px 15px #ff15154d;
+  border: 3px solid rgb(255, 0, 0);
+  color: $main-color;
+  background-color: $white;
+ 
+
+ 
+}
+
+
+
+
+
+.btn.btn-fullwidth {
+  border-width: 2px;
+  padding: 0.25rem 1.5rem;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.btn.btn-login {
+  border-width: 2px;
+  padding: 0.25rem 10rem;
+  font-size: 1rem;
+  width: 100%;
+}
